@@ -1,0 +1,39 @@
+<div class="container text-center">
+
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-10 col-lg-6 col-sm-12">
+      <mat-card class="login-form">
+
+        <mat-card-header>
+          <mat-card-title class="header-text">Login Form</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <form class="m-3 d-flex justify-content-center  flex-column flex-md-row" #f="ngForm">
+              <mat-form-field class="m-md-3 col-md-6 col-sm-auto w-50">
+                <mat-label>username</mat-label>
+                <input autofocus autocomplete="off" type="text" matInput [(ngModel)]="user.username" name="username" required>
+              </mat-form-field>
+
+              <mat-form-field class="m-md-3 col-md-6 col-sm-auto w-50">
+                <mat-label>Password</mat-label>
+                <input type="password" matInput [(ngModel)]="user.password" name="password" required>
+              </mat-form-field>
+            </form>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button color="primary" class="submit" (click)="submit(f)" [disabled]="isLoad">Login</button>
+        </mat-card-actions>
+        <mat-card-actions>
+          <button mat-button color="primary" class="submit" (click)="addNewUser(f)" [disabled]="isLoad">Create New Account</button>
+        </mat-card-actions>
+
+        <mat-card-actions>
+          <mat-progress-bar mode="indeterminate" *ngIf="isLoad"></mat-progress-bar>
+        </mat-card-actions>
+      </mat-card>
+
+    </div>
+  </div>
+
+
+</div>

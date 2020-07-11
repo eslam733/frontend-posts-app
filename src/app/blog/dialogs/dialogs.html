@@ -1,0 +1,42 @@
+<h1 mat-dialog-title>New Post</h1>
+<div mat-dialog-content>
+  <form #f="ngForm">
+    <div class="row">
+      <div class="col-12 d-flex flex-column">
+        <div class="d-flex justify-content-between">
+          <mat-form-field class="col-6 pl-0">
+            <mat-label>title</mat-label>
+            <input matInput required name="title"
+                   [(ngModel)]="postModel.title">
+          </mat-form-field>
+
+          <mat-form-field class="col-6 pr-0">
+            <mat-label>subtite</mat-label>
+            <input matInput required name="subtitle"
+                   [(ngModel)]="postModel.subtitle">
+          </mat-form-field>
+        </div>
+
+        <mat-form-field>
+          <mat-label>img link</mat-label>
+          <input matInput [(ngModel)]="postModel.img" name="img">
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Content</mat-label>
+          <textarea matInput required [(ngModel)]="postModel.content" name="conten"></textarea>
+        </mat-form-field>
+      </div>
+
+    </div>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button [disabled]="f.invalid" (click)="submit(f)">Submit</button>
+  <button mat-button [mat-dialog-close] (click)="close()" cdkFocusInitial>Cancel</button>
+
+</div>
+<mat-dialog-actions>
+  <mat-progress-bar mode="indeterminate" *ngIf="isLoad"></mat-progress-bar>
+</mat-dialog-actions>
+

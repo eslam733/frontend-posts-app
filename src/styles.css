@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/dist/css/bootstrap-grid.min.css";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background: #DDD}
+
+
+.mat-card-header-text{
+  margin: 1px auto !important;
+}
+
+.mat-card-actions{
+  margin-bottom: 5px;
+}

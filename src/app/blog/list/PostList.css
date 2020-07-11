@@ -1,0 +1,47 @@
+.container{
+  margin: auto !important;
+}
+
+
+.post-table{
+  /*max-width: 80%;*/
+}
+
+.post-table table{
+  width: 100%;
+  margin: 0px auto;
+  text-align: center;
+  min-width: 429px;
+  border: 1px solid #3d1684;
+  max-width: 1000px;
+}
+
+.mat-row{
+  transition: all .4s;
+}
+
+.mat-row:hover{
+  background: #dadada;
+  cursor: pointer;
+}
+
+
+.post-table table th{
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #754bbf;
+  color: #DDD;
+}
+
+.post-table table tr:nth-of-type(even){
+  background-color: #e5e5e5;
+}
+
+
+.paginator{
+  box-shadow: -1px 11px 17px 7px #CCC;
+  background: #eaeaea;
+  min-width: 429px;
+  max-width: 1000px;
+}

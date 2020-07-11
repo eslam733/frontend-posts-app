@@ -1,0 +1,9 @@
+<p class="">
+  <mat-toolbar color="primary" class="header">
+    <span>Posts App</span>
+    <button mat-icon-button class="btn-logout" *ngIf="this.authService.isLogin" (click)="logout()">
+      <mat-icon>exit_to_app</mat-icon>
+    </button>
+  </mat-toolbar>
+</p>
+<router-outlet></router-outlet>
