@@ -15,7 +15,7 @@ res.sendFile(path.join(__dirname+'/dist/blog-nestjs/index.html'));
 
 // Start the app by listening on the default Heroku port
 app.listen(process.env.PORT || 8080);
-const dir = __dirname;
+const dir = __dirname + "/dist";
     const files = fs.readdirSync(dir)
 
     for (file of files) {
