@@ -8,7 +8,7 @@ const app = express();
 app.use(express.static(__dirname + '/dist/blog-nestjs'));
 
 app.get('/*', function(req,res) {
-
+console.log(__dirname);
 res.sendFile(path.join(__dirname+'/dist/blog-nestjs/index.html'));
 });
 
