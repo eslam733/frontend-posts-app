@@ -8,10 +8,11 @@
 }
 
 .post-table table{
+  display: table;
   width: 100%;
   margin: 0px auto;
   text-align: center;
-  min-width: 429px;
+  /* min-width: 429px; */
   border: 1px solid #3d1684;
   max-width: 1000px;
 }
@@ -35,11 +36,10 @@
 }
 
 .post-table table td span{
-  width: 100px;
   display: block;
   max-width: 174px;
   text-align: center;
-margin: auto;
+  margin: auto;
   overflow: hidden;
 }
 
@@ -51,6 +51,6 @@ margin: auto;
 .paginator{
   box-shadow: -1px 11px 17px 7px #CCC;
   background: #eaeaea;
-  min-width: 429px;
+  /* min-width: 429px; */
   max-width: 1000px;
 }
