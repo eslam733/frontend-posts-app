@@ -34,6 +34,15 @@
   color: #DDD;
 }
 
+.post-table table td span{
+  width: 100px;
+  display: block;
+  max-width: 174px;
+  text-align: center;
+margin: auto;
+  overflow: hidden;
+}
+
 .post-table table tr:nth-of-type(even){
   background-color: #e5e5e5;
 }
