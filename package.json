@@ -31,7 +31,7 @@
     "@angular/platform-server": "~10.0.2",
     "@angular/router": "~10.0.2",
     "@nestjs/common": "^7.0.0",
-    "@nestjs/core": "^7.0.0",
+    "@nestjs/core": "^9.0.5",
     "@nestjs/ng-universal": "^2.0.1",
     "@nestjs/platform-express": "^7.0.0",
     "@nestjs/typeorm": "^7.1.0",
